@@ -13,9 +13,11 @@ app.get('/', (req, res) => {
 
 // Basit bir API endpoint
 app.get('/api', (req, res) => {
-  res.json({ message: 'API çalışıyor!' });
+  res.json({ message: 'API çalışıyor! ' });
 });
-
+app.get('/apii', (req, res) => {
+    res.json({ message: 'API çalışıyorsdads! ' });
+  });
 // Dinleme
 app.listen(port, () => {
   console.log(`Sunucu http://localhost:${port} aaaa adresinde çalışıyor`);
