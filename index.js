@@ -2,6 +2,7 @@ import express from 'express';
 import bodyParser from "body-parser";
 import cors from "cors";
 import { startWebsocket } from './websocket/websocket.js';
+import { Gate } from './gate/ws.js';
 
 const app = express();
 const port = 3000;
@@ -31,4 +32,5 @@ app.get('/apii', (req, res) => {
 const server =app.listen(port, () => {
   console.log(`Sunucu http://localhost:${port} bbbb adresinde çalışıyor`);
   startWebsocket(server)
+  Gate();
 });
