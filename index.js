@@ -16,7 +16,7 @@ app.get('/api', (req, res) => {
   res.json({ message: 'API çalışıyor! ' });
 });
 app.get('/apii', (req, res) => {
-    res.json({ message: 'API çalışıyorsdads! ' });
+    res.json({ message: 'API kanca deneme ' });
   });
   app.get('/web', (req, res) => {
     res.json({ message: 'kanca' });
