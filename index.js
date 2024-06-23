@@ -1,11 +1,11 @@
 import express from 'express';
 import bodyParser from "body-parser";
 import cors from "cors";
-import dotenv from "dotenv";
+
 const app = express();
 const port = 3000;
 
-dotenv.config();
+
 // Middleware
 app.use(bodyParser.json({ limit: "2mb" }));
 app.use(express.json());
@@ -27,6 +27,6 @@ app.get('/apii', (req, res) => {
     res.json({ message: 'kanca' });
   });
 // Dinleme
-app.listen(port, () => {
-  console.log(`Sunucu http://localhost:${port} aaaa adresinde çalışıyor`);
+const server =app.listen(port, () => {
+  console.log(`Sunucu http://localhost:${port} bbbb adresinde çalışıyor`);
 });
