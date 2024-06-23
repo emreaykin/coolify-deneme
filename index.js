@@ -18,6 +18,9 @@ app.get('/api', (req, res) => {
 app.get('/apii', (req, res) => {
     res.json({ message: 'API çalışıyorsdads! ' });
   });
+  app.get('/web', (req, res) => {
+    res.json({ message: 'kanca' });
+  });
 // Dinleme
 app.listen(port, () => {
   console.log(`Sunucu http://localhost:${port} aaaa adresinde çalışıyor`);
