@@ -1,9 +1,11 @@
 import express from 'express';
 import bodyParser from "body-parser";
 import cors from "cors";
+import dotenv from "dotenv";
 const app = express();
 const port = 3000;
 
+dotenv.config();
 // Middleware
 app.use(bodyParser.json({ limit: "2mb" }));
 app.use(express.json());
