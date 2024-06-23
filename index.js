@@ -1,7 +1,7 @@
 import express from 'express';
 import bodyParser from "body-parser";
 import cors from "cors";
-import { startWebsocket } from './websocket/websocket';
+import { startWebsocket } from './websocket/websocket.js';
 
 const app = express();
 const port = 3000;
