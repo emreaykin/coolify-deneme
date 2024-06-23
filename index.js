@@ -18,5 +18,5 @@ app.get('/api', (req, res) => {
 
 // Dinleme
 app.listen(port, () => {
-  console.log(`Sunucu http://localhost:${port} adresinde çalışıyor`);
+  console.log(`Sunucu http://localhost:${port} aaaa adresinde çalışıyor`);
 });
